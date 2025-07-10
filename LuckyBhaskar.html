@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="h">
+      <div class="menu-toggle"><a href="choice.html">☰</a></div>
+      <button onclick="addToWishlist('Lucky Baskhar')">Add to Wishlist</button>
+    </div>
+
+    <header>
+      <div >
+      <h1  >Lucky Baskhar</h1>
+      <h2 style="color: gold;">(2024)• 2h 28min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 8.0/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://www.cinejosh.com/newsimg/newsmainimg/dulquer-salmaan-lucky-baskhar-first-look-out_b_0302240544.jpg" alt="Movie Poster" class="poster">
+    <iframe src="https://www.bing.com/ck/a?!&&p=aa895452081886b38570ddf5aaf99902f99bbef71c4e3aa61b96c11278f78647JmltdHM9MTc0NzI2NzIwMA&ptn=3&ver=2&hsh=4&fclid=3d9fda8a-b906-622e-24e5-ce49b8ab6386&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bHVja3krYmFza2hhcittb3ZpZSt0cmFpbGVyJm1pZD01RjUxQjcwNTIxNjE0NkVDQzA5NDVGNTFCNzA1MjE2MTQ2RUNDMDk0JkZPUk09VklSRQ&ntb=1" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Caper</span>
+      <span class="genre">Crime</span>
+      <span class="genre">Drama</span>
+      <span class="genre">Thriller</span>
+    </section>
+    <hr>
+    <h3 style="color: white;">A cash-strapped cashier working at a bank embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.
+    </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.08vQiw1VSXs8bM7HX-_7VQHaEK?w=276&h=180&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Dulquer Salman </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.WQcy0p_Avt15qLFWDsjDCAHaFj?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Meenakshi Chaudhary</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://m.media-amazon.com/images/M/MV5BZjM4OWEyOWItNmU0Yy00MjQyLTkyNzYtOTQzNzA1ZTJmOTY0XkEyXkFqcGdeQXVyMTExNDQ2MTI@.V1_FMjpg_UX1000.jpg"></div>
+          <p>Tinnu Anand</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://www.cinejosh.com/newsimg/newsmainimg/lucky-baskhar-makers-celebrated-sai-kumar-birthday-by-unveiling-his-first-look-poster_b_2707240228.jpg"></div>
+          <p>Sai Kumar</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.6IYbpZz1L4c9TPgx25CZOQHaLH?w=124&h=186&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Ramki</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.vGQkCSwEzw9d4G-4pcOqzAAAAA?w=152&h=180&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Raghu Babu</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Venky Atluri</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>.Naga Vamsi   .Sai Soujanya</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>Venky Atluri</p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p> A cash-strapped cashier working at a bank embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.</p>
+    <hr>
+  <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

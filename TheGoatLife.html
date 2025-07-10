@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="h">
+      <div class="menu-toggle"><a href="choice.html">☰</a></div>
+      <button onclick="addToWishlist('The Goat Life')">Add to Wishlist</button>
+    </div>
+
+    <header>
+      <div >
+      <h1  >The Goat Life</h1>
+      <h2 style="color: gold;">(2024)• 2h 53min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 7.1/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://th.bing.com/th/id/OIP.Qbo8LCP4_vayLRXUKY5QfwHaFj?cb=iwc2&rs=1&pid=ImgDetMain" alt="Movie Poster" class="poster">
+    <iframe src="https://www.bing.com/videos/riverview/relatedvideo?q=the+goat+life+malayalam+trailer&&mid=2BC0B23F0E64FCD22F5F2BC0B23F0E64FCD22F5F&FORM=VAMGZC" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Desert Adventure</span>
+      <span class="genre">Survival</span>
+      <span class="genre">Adventure</span>
+      <span class="genre">Drama</span>
+        
+     
+    </section>
+    <hr>
+    <h3 style="color: white;">An Indian man seeking work follows a job lead to Saudi Arabia, only to find himself forced to labor without pay as a goat herder in the remote desert.
+    </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://m.media-amazon.com/images/M/MV5BZjI2ZjU0YWItMDlmYy00YzA0LWIxY2YtYmY3NGQzZmUzNzc1XkEyXkFqcGdeQXVyNDIxMDcxNjc@.V1_FMjpg_UX1000.jpg"></div>
+          <p>Prithviraj Sukumaran </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://www.kerala9.com/wp-content/uploads/2020/01/actress-amala-paul-new-photos.jpg"></div>
+          <p>Amala Paul</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://www.mathrubhumi.com/image/contentid/policy:1.9816968:1723793057/KR%20Gokul.jpg?$p=0459df8&f=16x9&w=1080&q=0.8"></div>
+          <p>K.r. Gokul</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://starsunfolded.com/wp-content/uploads/2023/03/Rik-Aby.jpg"></div>
+          <p>Rik Aby</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.gUvm6Coow15JavTURwOxbAHaEK?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Talib Al Balushi</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://www.heyuguys.com/images/2012/09/Jimmy-Jean-Louis-in-Heroes.jpg"></div>
+          <p> Jimmy Jean-Louis</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Blessy</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>.Blessy  .Steven Adams</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>.Benyamin   .Blessy   </p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p> The life of Najeeb Muhammed, an Indian emigrant going missing. Najeeb's dream was to work and earn enough money to send back home. But, he achieves his dream only to be propelled by a series of incidents into a slavelike existence herding goats in desert. In the end, Najeeb contrives a hazardous scheme to escape his desert prison.</p>
+    <hr>
+ <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

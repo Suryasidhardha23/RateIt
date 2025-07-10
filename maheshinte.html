@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maheshinte Prathikaaram</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="menu-toggle"><a href="choice.html">☰</a></div>
+    <header>
+      <h1>Maheshinte Prathikaaram</h1>
+      <h2 style="color: gold;">(2016) • 2h 1min</h2>
+      <div class="rating">
+        <h3>World Rating</h3>
+        <h3>⭐ 8.3/10</h3>
+      </div>
+      <div class="user-rating">
+        <label for="userRate"><h3>Your Rating:</h3></label>
+        <form>
+          <input type="number" id="userRate" min="1" max="10" />
+          <button type="submit">Rate</button>
+        </form>
+      </div>
+    </header>
+
+    <div class="hello-container">
+      <img src="https://th.bing.com/th/id/OIP.enh1OTI701mG53NKkO_U6gHaK_?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Maheshinte Prathikaaram Poster" class="poster">
+      <iframe class="trailer" src="https://www.bing.com/videos/riverview/relatedvideo?q=kumbalangi+nights+trailer&&mid=C634572D35D05E7EE186C634572D35D05E7EE186&FORM=VAMGZC" allowfullscreen></iframe>
+    </div>
+
+    <section class="genres">
+      <span class="genre">Drama</span>
+      <span class="genre">Comedy</span>
+      <span class="genre">Revenge</span>
+    </section>
+
+    <hr>
+    <h3 style="color: white;">
+      A mild-mannered photographer in a small town is forced to take a stand after being publicly humiliated, triggering a journey of personal transformation.
+    </h3>
+    <hr>
+
+    <div class="top-cast">
+      <h2>Top Cast</h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.INrDWg-jIWGpxNQ6rXyjz-k7agV62wZJkhCT5QL_wWQ?w=120&h=168&c=7&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="Fahadh Faasil">
+          <p>Fahadh Faasil</p>
+        </div>
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.9IQTquvCxRhpIwBHYKCdomvLtcmtbOYxUTZWcD6pZ7Y?w=312&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM">
+        </div>
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.TTXS6ZFNRLHpkObQOZofuGaDP5SyjQlxsT70iOMGyxE?w=120&h=168&c=7&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="Alencier Ley Lopez">
+          <p>Alencier L. Lopez</p>
+        </div>
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.9iOjvyrA6oPh0kqBC8VQgKO3FhD1vymWlei0jO-tdsc?w=120&h=168&c=7&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="Soubin Shahir">
+          <p>Soubin Shahir</p>
+        </div>
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.cf7037b03aa59e6a2bbe912027e785ed?w=120&h=168&c=7&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="Anusree">
+          <p>Anusree</p>
+        </div>
+        <div class="cast-member">
+          <img class="cast-image" src="https://th.bing.com/th/id/OSK.VJCKqORe9gchXM0a4Q-TVJdJAMzF6kLIxOqO4y1tqJ0?w=120&h=168&c=7&rs=1&qlt=80&o=6&dpr=1.3&pid=SANGAM" alt="Babu Namboothiri">
+          <p>Babu Namboothiri</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;">Director:</strong> Dileesh Pothan</p>
+      <p><strong style="color: whitesmoke;">Producer:</strong> Aashiq Abu</p>
+      <p><strong style="color: whitesmoke;">Writer:</strong> Syam Pushkaran</p>
+    </div>
+    <hr>
+
+    <h2 style="color:white">Storyline</h2>
+    <hr>
+    <p style="color:white;">
+      Mahesh Bhavana, a photographer in the idyllic town of Idukki, leads a peaceful life until a scuffle changes everything. After being humiliated in front of his neighbors, he takes a vow not to wear slippers until he has exacted revenge. What follows is a subtle yet profound transformation in his character. This humorous and heartfelt journey explores personal growth, resilience, and the power of quiet determination.
+    </p>
+    <hr>
+
+    <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

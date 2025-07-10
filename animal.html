@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="h">
+      <div class="menu-toggle"><a href="choice.html">☰</a></div>
+      <button onclick="addToWishlist('Dhruva')">Add to Wishlist</button>
+    </div>
+
+    <header>
+      <div >
+      <h1  >Animal</h1>
+      <h2 style="color: gold;">(2019)• 3h 24min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 6.1/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://www.businessoftollywood.com/wp-content/uploads/2023/12/GAUsyLXbEAAAx1W.jpeg" alt="Movie Poster" class="poster">
+    <iframe src="https://www.bing.com/videos/riverview/relatedvideo?q=animal+movie+trailer&mid=D7A35E52212973EDE021D7A35E52212973EDE021&FORM=VIRE" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Action Epic</span>
+      <span class="genre">Drama</span>
+      <span class="genre">Crime</span>
+      <span class="genre">Thriller</span>
+     
+    </section>
+    <hr>
+    <h3 style="color: white;">The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.
+    </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.EdIoDXSBupaGEx8nHipCcAHaDt?w=318&h=180&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Ranbir Kapoor </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.0DmRHXEIH42-5EwWp8ULAgHaQD?w=208&h=362&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Rashmika Mandana</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://i.cdn.newsbytesapp.com/images/l75820250512140537.jpeg"></div>
+          <p>Anil Kapoor</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.2j7TmVFEboS87Plg9WjyjgHaJQ?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Bobby Deol</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://img.mensxp.com/media/content/2020/Jun/Lesser-Known-Facts-About-Tripti-Dimri-From-Bulbbul-600x900_5ef72b8182bc3.jpeg?w=528&h=792&cc=1"></div>
+          <p>Tripti Dimri</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://wikibio.in/wp-content/uploads/2023/12/Saloni-Batra-Picture.jpg"></div>
+          <p>Saloni Batra</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Sandeep Reddy Vanga</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>.Suresh Bandaru .Saurabh Gupta</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>.Bhushan Kumar</p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p> Animal is a dark action drama about Ranvijay Singh and his troubled relationship with his father Balbir Singh, a rich industrialist and pretty much the most powerful man in the country. As a kid, Ranvijay always wanted his father's attention and validation, but its absence ended up turning him into a violent and rebellious youngster who resorted to violence and brute force to solve problems, much to the chagrin of Balbir, who disapproved of his methods and sent him to boarding school. After returning home as an adult, he found himself unfavorably compared to his estranged brother-in-law and ended up saying something which prompted Balbir to kick him out once again. Ranvijay married his childhood sweetheart Gitanjali and moved to the US, and a cold war began between the father-son duo which abruptly ended after an assassination attempt on Balbir. Now, Ranvijay is ready to put his differences aside and plots vengeance against those who tried to kill Balbir, once again resorting to violence to solve this problem. As a result, the violence and bloodshed escalates and takes a heavy toll on his life and psyche, turning him into a cold-blooded animal who will stop at nothing in his pursuit of twisted vengeance</p>
+    <hr>
+  <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

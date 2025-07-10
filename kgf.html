@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="movie-container">
+        <div class="h">
+            <div class="menu-toggle"><a href="choice.html">☰</a></div>
+            <button onclick="addToWishlist('K.G.F: Chapter 2')">Add to Wishlist</button>
+        </div>
+
+        <header>
+            <div>
+                <h1>K.G.F: Chapter 2</h1>
+                <h2 style="color: gold;">(2022)• 2h 46min</h2>
+            </div>
+            <div class="rating">
+                <h3>World Rating</h3>
+                <h3>⭐ 8.2/10</h3>
+            </div>
+
+            <div class="user-rating">
+
+                <label for="userRate">
+                    <h3>Your Rating: </h3>
+                </label>
+
+                <form>
+                    <input type="number" id="userRate" min="1" max="10" />
+                    <button type="submit">Rate</button>
+                </form>
+            </div>
+        </header>
+
+        <div class="hello-container">
+            <img src="https://th.bing.com/th/id/OIP.5Q1PO9dSww691NUGIhI5tAHaKf?cb=iwc2&rs=1&pid=ImgDetMain"
+                alt="Movie Poster" class="poster">
+            <iframe
+                src="https://www.bing.com/videos/riverview/relatedvideo?q=kgf+chapter+2+trailer&mid=666F606B7BCDBC3DD384666F606B7BCDBC3DD384&FORM=VIRE"
+                class="trailer"></iframe>
+        </div>
+        <br>
+        <br>
+        <section class="genres">
+            <span class="genre">Action Epic</span>
+            <span class="genre">Epic</span>
+            <span class="genre">Gangster</span>
+            <span class="genre">Drama</span>
+            <span class="genre">Thriller</span>
+
+        </section>
+        <hr>
+        <h3 style="color: white;">In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear into his foes, while
+            the government sees him as a threat to law and order.
+        </h3>
+        <hr>
+        <div class="top-cast">
+            <h2>Top Cast </h2>
+            <div class="cast-grid">
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="https://images.tv9kannada.com/wp-content/uploads/2023/04/yash.jpg"></div>
+                    <p>Yash </p>
+                </div>
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="https://cdn.gulte.com/wp-content/uploads/2025/05/Srinidhi-2-819x1024.jpg"></div>
+                    <p>Srinidhi Shetty</p>
+                </div>
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="https://wallpapers.com/images/hd/sanjay-dutt-retro-look-20mzllhdkcblvwcg.jpg"></div>
+                    <p>Sanjay Dutt</p>
+                </div>
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="data:image/jpeg;base64,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">
+                    </div>
+                    <p>Prakash Raj</p>
+                </div>
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="https://assets.telegraphindia.com/telegraph/2023/Dec/1702271974_raveena-tandon.jpg">
+                    </div>
+                    <p>Raveena Tandon</p>
+                </div>
+                <div class="cast-member">
+                    <div><img class="cast-image"
+                            src="https://starsunfolded.com/wp-content/uploads/2018/01/Rao-Ramesh.jpg"></div>
+                    <p>Rao Ramesh</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="credits">
+            <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Prashanth Neel</p>
+            <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>Prashanth Neel </p>
+            <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>Vijay Kirgandur</p>
+        </div>
+        <hr>
+        <br>
+
+        <h2 style="color:white">Storyline</h2>
+        <hr>
+        <p> The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now - Rocky, whose name strikes fear in
+            the heart of his foes. His allies look up to Rocky as their savior, the government sees him as a threat to
+            law and order; enemies are clamoring for revenge and conspiring for his downfall. Bloodier battles and
+            darker days await as Rocky continues on his quest for unchallenged supremacy.</p>
+        <hr>
+        <section class="comments-section">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+
+            <div class="comments-wrapper">
+                <div id="commentsBox" class="collapsed"></div>
+                <button id="toggleButton">▼ Show All</button>
+            </div>
+        </section>
+    </div>
+    <script src="movie.js"></script>
+</body>
+</html>

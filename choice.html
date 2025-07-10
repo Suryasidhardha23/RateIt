@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+
+  <style>
+    body{
+        background-color: black;
+         display: flex; 
+         justify-content: center; 
+         align-items: center; 
+         flex-direction: column; 
+         min-height: 100vh;
+    }
+    .menu{
+        background-color: black; 
+        border: 2px solid white; 
+        border-radius: 20px; 
+        padding: 30px;
+         max-width: 1000px; 
+         width: 90%; 
+         text-align: center;
+    }
+    .types{
+        display: flex; 
+        justify-content: space-evenly; 
+        flex-wrap: wrap; 
+        margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu">
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <img src="https://imgs.search.brave.com/sI1_mGaZ1yV-LP845254lxP3gFD8N9B0Qguf-jnTroI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly95MUx0V1hQWFNf/S1BQMnE3YWRocUM5/dEFzT1E9LzExMjR4/MTA5ODoxNzg0eDE3/NTgvZml0LWluLzUw/MHg1MDAvOTlkZXNp/Z25zLWNvbnRlc3Rz/LWF0dGFjaG1lbnRz/LzE0MS8xNDE4NDkv/YXR0YWNobWVudF8x/NDE4NDkxOTc" alt="RateIt Logo" height="120px" width="120px" />
+      <a href="javascript:history.back()">
+        <img src="https://th.bing.com/th/id/OIP.uYiitUGvNUXUFwAWLKGSaQHaH_?w=153&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="back" height="60px" width="60px" />
+      </a>
+    </div>
+
+    
+
+    <div class="types">
+      <div>
+        <h2 style="color: gold;"><u>Movies</u></h2>
+        <ul style="list-style: none;">
+          <li><a href="telugu.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Tollywood Movies</a></li>
+          <li><a href="malayali.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Mollywood Movies</a></li>
+          <li><a href="english.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Hollywood Movies</a></li>
+          <li><a href="hindi.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Bollywood Movies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="color: gold;"><u>Community</u></h2>
+        <ul style="list-style: none;">
+          <li><a href="help.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Help center</a></li>
+          <li><a href="condition.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Conditions of use</a></li>
+          <li><a href="license.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='white'">Licenses</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <h2 style="color: gold;">Popular Movies</h2>
+      <div style="display: flex; justify-content:space-evenly; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+        <a href="#" style="text-decoration: none; color: white;">
+          <img src="https://th.bing.com/th/id/OIP.g_4ASC_Gj-ugO0k8T7um5wHaEo?w=253&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Movie 1" style="border: 2px solid white; border-radius: 10px;height: 200px; width:300px;" onmouseover="this.style.borderColor='gold'" onmouseout="this.style.borderColor='white'" />
+          <p>John wick</p>
+        </a>
+        <a href="#" style="text-decoration: none; color: white;">
+          <img src="https://pics.filmaffinity.com/uncharted-417211360-large.jpg" alt="Movie 2" style="border: 2px solid white; border-radius: 10px;height:200px;width:300px;" onmouseover="this.style.borderColor='gold'" onmouseout="this.style.borderColor='white'" />
+          <p>Uncharted</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="color: white; text-align: center; padding: 20px; font-size: 14px; margin-top: 20px;">
+    © 2025 RateIt. All rights reserved.
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="h">
+      <div class="menu-toggle"><a href="choice.html">☰</a></div>
+      <button onclick="addToWishlist('Maharshi')">Add to Wishlist</button>
+    </div>
+
+    <header>
+      <div >
+      <h1  >Maharshi</h1>
+      <h2 style="color: gold;">(2019)• 2h 56min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 7.1/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://wallpapercave.com/wp/wp9065354.jpg" alt="Movie Poster" class="poster">
+    <iframe src="https://www.bing.com/videos/riverview/relatedvideo?q=maharshi+movie+trailer&&mid=084D713C53A936E86374084D713C53A936E86374&FORM=VAMGZC" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Action</span>
+      <span class="genre">Drama</span>
+     
+    </section>
+    <hr>
+    <h3 style="color: white;">A story about Rishi and his quest for success in different stages of life from being a US-based businessman to being a champion for the poor downtrodden farmers.
+    </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://images.news18.com/ibnlive/uploads/2019/05/Mahesh-Babus-Maharshi.jpg?impolicy=website&width=875&height=0"></div>
+          <p>Mahesh Babu </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.68u8IaNHftcP2Tv6lQBEUwHaLH?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Pooja Hegde</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.wTn7h3qwLWBFSnNtOIHjSwHaE3?w=261&h=180&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Allari Naresh</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.axhvwnE_CkhQ_lBXbhb4FgHaK9?w=186&h=276&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Jagapathi Babu</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.5_VJKTgCge5vvQahbINdnQHaLG?w=121&h=182&c=7&r=0&o=5&cb=iwc2&dpr=1.3&pid=1.7"></div>
+          <p>Prakash Raj</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OIP.yuqSUUxbaTBhSrShRqBtfgHaKe?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Jaya Sudha</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Vamshi Paidipally</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>.Dil Raju  .Aswani Dutt</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>.Hari   .Ahishor Solomon   .Vamshi Paidipally</p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p> A story about Rishi and his quest for success in different stages of life from being a US-based businessman to being a champion for the poor downtrodden farmers.</p>
+    <hr>
+  <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

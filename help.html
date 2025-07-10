@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help - MovieVerse</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #444;
+    }
+
+    .faq {
+      margin-bottom: 20px;
+    }
+
+    .faq h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #007BFF;
+      cursor: pointer;
+    }
+
+    .faq p {
+      display: none;
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Need Help? We're Here!</h1>
+    <p>RateIt Support Center</p>
+  </header>
+
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <h3 onclick="toggle(this)">📽️ How do I search for a movie?</h3>
+      <p>You can search for movies using the search bar on the home page. Type the movie name and hit enter to view results.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggle(this)">📝 How do I leave a comment on a movie?</h3>
+      <p>Scroll to the bottom of any movie page and click on the comment section. It will expand and show the latest 4 comments and an input box to add yours.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggle(this)">🎬 What info is available on each movie page?</h3>
+      <p>Each page includes the movie poster, trailer, cast (up to 6), storyline, and collapsible comments for discussion.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggle(this)">📩 How can I contact the MovieVerse team?</h3>
+      <p>You can email us at support@movieverse.com or use the contact form coming soon on our site.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggle(this)">🌐 Is this site only for Malayalam movies?</h3>
+      <p>Currently, yes! We focus on Malayalam cinema. But stay tuned—we may expand to other regional industries soon!</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 RateIt | All rights reserved.
+  </footer>
+
+  <script>
+    function toggle(elem) {
+      const para = elem.nextElementSibling;
+      para.style.display = para.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

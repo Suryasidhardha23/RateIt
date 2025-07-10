@@ -1,0 +1,173 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a:link {
+    color:#ff1d58;
+}
+
+.sidhu {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border:5px solid orange
+}
+
+
+.surya {
+    text-align: center;
+}
+
+.surya img {
+    border-radius: 50%;
+    border: 4px solid #555;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hi h1 {
+    margin: 10px;
+    font-size: 45px;
+    color: #222;
+    text-align: center;
+}
+
+.hi h2 {
+    font-size: 34px;
+    font-weight:normal;
+    color: #666;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+h3 {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: larger;
+}
+li{
+    font-size: large;
+}
+th {
+    background-color: #444;
+    color: white;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+            
+    .sidhu {
+        padding: 20px;
+        margin: 10px;
+    }
+    .surya{
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+    }
+    a:link {
+        color:black;
+        font-weight: bolder;
+        text-decoration-line:unset;
+    }
+    .surya img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+    }
+
+    .x{
+   background-image:url(https://th.bing.com/th/id/OIP.hcCOFUpZOGDjfk0KrpEHqgAAAA?w=229&h=169&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 580px) {
+    .hi h1 {
+        font-size: 21px;
+    }
+    a:link {
+        color:#ff1d58;
+    }
+    .hi h2 {
+        font-size: 12px;
+        color:black;
+    }
+    .surya img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    h3 {
+        font-size: 6px;
+        padding: 5px;
+    }
+    li{
+        font-size: small;
+    }
+    th, td {
+        font-size: 8px;
+        padding: 4px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+    .data{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: small;
+        background-image: none;
+    }
+    .sidhu{
+        border:2px solid orange
+    }
+    .surya{
+        background-image: url(https://img.freepik.com/premium-photo/simple-plain-color-background_136558-7188.jpg);
+    }
+    .hi{
+        padding-top:15px;
+    }
+}

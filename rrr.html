@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+    <div class="h">
+      <div class="menu-toggle"><a href="choice.html">☰</a></div>
+      <button onclick="addToWishlist('RRR')">Add to Wishlist</button>
+    </div>
+
+    <header>
+      <div >
+      <h1  >RRR</h1>
+      <h2 style="color: gold;">(2022)• 3h 7min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 7.8/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2019/03/RRR-2022.jpeg" alt="Movie Poster" class="poster">
+    <iframe src="https://www.bing.com/videos/riverview/relatedvideo?q=rrr+movie+trailer&&mid=570FACA3DF65AE6D06D5570FACA3DF65AE6D06D5&FORM=VAMGZC" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Action Epic</span>
+      <span class="genre">Drama</span>
+      <span class="genre">Adventure</span>
+      <span class="genre"> Period Drama</span>
+     
+    </section>
+    <hr>
+    <h3 style="color: white;">A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India.
+    </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://imgeng.jagran.com/images/2023/mar/JrNTR1678512736724.jpg"></div>
+          <p>N.T.R </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://wallpapers.com/images/hd/ram-charan-hd-sleek-portrait-5saotulfo921krrg.jpg"></div>
+          <p>Ram Charan</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://assets.vogue.in/photos/622f9af651da11b2e5b0b176/master/pass/7%20times%20Alia%20Bhatt%20served%20sublime%20beauty%20moments%20.jpg"></div>
+          <p>Alia Bhatt</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://static.toiimg.com/thumb/msid-80587148,width-900,height-1200,imgsize-398733,resizemode-6.cms"></div>
+          <p>Olivia Morris</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OIP.9kaHTuCxkG8DnyUyHoKYyQHaJQ?cb=iwc2&rs=1&pid=ImgDetMain"></div>
+          <p>Shriya Saran</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://actoragecheck.com/limage/LzgzakRnSEFQZjRoUENGb0YxT1RGMDh4a2hkNi5qcGcAACh231.jpg"></div>
+          <p>Ajay Devgn</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>S.S. Rajamouli</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>.Vijayendra Prasad .Saurabh Gupta</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>D.V.V. Danayya</p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p> During the British era, Malli, a small tribal girl, is taken away by British governor Scott Buxton and his wife Catherine against the wishes of her mother. Rama Raju is an Indian cop who works for the British army; for him duty comes first, and he is very ruthless to revolutionary Indians but is never given his due by British government. The British government find that a tribal Komaram Bheem, who considers Malli his sister, has started his search for her and could be an obstacle for the British army. The governor and his wife announce a special post for any officer who can bring Bheem to them. Rama Raju decides to take the matters into his own hands and promises the government to bring him in dead or alive. Bheem by now has reached he city in search of Malli and pretends to be a mechanic, Akhtar. During a train accident on a lake he and Rama Raju risk their lives and save a kid and become best of friends. But each man will clash with the other and will thirst for each other's blood in order to complete their missions</p>
+    <hr>
+  <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div class="comments-wrapper">
+        <div id="commentsBox" class="collapsed"></div>
+        <button id="toggleButton">▼ Show All</button>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="movie.js"></script>
+</body>
+</html>

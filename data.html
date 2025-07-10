@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rate a Movie - MovieVerse</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    select, textarea, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .stars {
+      font-size: 2em;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .stars span.selected {
+      color: gold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rate a Movie</h1>
+    <p>Your feedback helps us improve!</p>
+  </header>
+
+  <div class="container">
+    <h2>Submit Your Rating</h2>
+
+    <form id="rateForm">
+      <label for="movie">Movie Name:</label>
+      <input type="text" id="movie" placeholder="e.g., Aavesham" required />
+
+      <label>Rating:</label>
+      <div class="stars" id="stars">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+
+      <label for="review">Short Review (optional):</label>
+      <textarea id="review" rows="4" placeholder="Share your thoughts..."></textarea>
+
+      <button type="submit">Submit Rating</button>
+    </form>
+
+    <div class="confirmation" id="confirmation">
+      ✅ Thank you for rating the movie!
+    </div>
+  </div>
+
+  <footer>
+    © 2025 RateIt | All rights reserved.
+  </footer>
+
+  <script>
+    const stars = document.querySelectorAll('#stars span');
+    let selectedRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.getAttribute('data-value'));
+        stars.forEach(s => s.classList.remove('selected'));
+        for (let i = 0; i < selectedRating; i++) {
+          stars[i].classList.add('selected');
+        }
+      });
+    });
+
+    document.getElementById("rateForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const movieName = document.getElementById("movie").value;
+      const reviewText = document.getElementById("review").value;
+
+      if (selectedRating === 0) {
+        alert("Please select a rating.");
+        return;
+      }
+
+      document.getElementById("confirmation").style.display = "block";
+      this.reset();
+      stars.forEach(s => s.classList.remove('selected'));
+      selectedRating = 0;
+    });
+  </script>
+
+</body>
+</html>

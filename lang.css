@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+ background-image: url('https://th.bing.com/th/id/OIP.wohwpBhMxkt2FWMoAByCAgHaEH?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+
+.container {
+  width: 100%;
+  max-width: 60vw; 
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#searchBox {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.movie-card {
+  border: 1px solid #000;
+  background-color:beige;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.movie-name {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: crimson;
+}
+
+.movie-link {
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.more-link {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e6c6c6;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 95vw;
+  }
+
+  .movie-image {
+    height: 100px;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="movie-container">
+        <div class="menu-toggle"><a href="choice.html">☰</a></div>
+    <header>
+      <div >
+      <h1  >Uncharted</h1>
+      <h2 style="color: gold;">(2022)• 1h 56min</h2>
+      </div>
+      <div class="rating"><h3>World Rating</h3><h3>⭐ 6.3/10</h3></div>
+
+       <div class="user-rating">
+          <label for="userRate"><h3>Your Rating: </h3></label>
+          <form>
+            <input type="number" id="userRate" min="1" max="10" />
+            <button type="submit">Rate</button>
+          </form>
+        </div>
+
+
+    </header>
+
+   <div class="hello-container">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.THisUbjs7JrUdXY5QnC1NAHaKe?rs=1&pid=ImgDetMain" alt="Movie Poster" class="poster">
+    <iframe src="https://youtu.be/eHp3MbsCbMg?t=62" class="trailer"></iframe>
+   </div>
+<br>
+<br>
+    <section class="genres">
+      <span class="genre">Globetrotting Adventure</span>
+      <span class="genre">Action</span>
+      <span class="genre">Adventure</span>
+      <span class="genre">Quest</span>
+      
+    </section>
+    <hr>
+    <h3 style="color: white;">Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor "Sully" Sullivan to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.  </h3>
+    <hr>
+      <div class="top-cast">
+      <h2>Top Cast </h2>
+      <div class="cast-grid">
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OSK.8472888bf564f16b81f6be3a5f973bdd?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Tom Holland </p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OSK.a8ab5e7520bf3a4bcbad4eafad5b23be?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Mark Wahlberg</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OSK.33ebadc5ca9e5811c6c8a887113858e9?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Antonio Banderas</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OSK.6a127e827b3fca4de0c1163fa156934f?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Sophia Ali</p>
+        </div>
+        <div class="cast-member">
+          <div ><img class="cast-image" src="https://th.bing.com/th/id/OSK.362181148b57291d41c5c9ea73528d43?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Tati Gabrielle</p>
+        </div>
+        <div class="cast-member">
+          <div><img class="cast-image" src="https://th.bing.com/th/id/OSK.b3f61bf4bee1e7695adc33a6fc22c1a2?w=120&h=168&c=7&rs=1&qlt=80&o=6&cb=thwsc1&dpr=1.3&pid=SANGAM"></div>
+          <p>Steven Waddington</p>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="credits">
+      <p><strong style="color: whitesmoke;font-size: medium;">Director:</strong>Ruben Fleischer</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Producer:</strong>Avi Arad . Charles Roven</p>
+      <p><strong style="color: whitesmoke;font-size: medium;">Writers:</strong>Rafe Judkins . Art Marcum . Matt Holloway</p>
+    </div>
+<hr>
+<br>
+      
+      <h2 style="color:white">Storyline</h2>
+      <hr>
+      <p>Street-smart Nathan Drake (Tom Holland) is recruited by seasoned treasure hunter Victor "Sully" Sullivan (Mark Wahlberg) to recover a fortune amassed by Ferdinand Magellan and lost 500 years ago by the House of Moncada. What starts as a heist job for the duo becomes a globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada (Antonio Banderas), who believes he and his family are the rightful heirs. If Nate and Sully can decipher the clues and solve one of the world's oldest mysteries, they stand to find $5 billion in treasure and perhaps even Nate's long-lost brother...but only if they can learn to work together.</p>
+    <hr>
+  <section class="comments-section">
+  <h2>Leave a Comment</h2>
+  <form id="commentForm">
+    <textarea id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+  <div id="commentsList">
+    <!-- User comments will appear here -->
+  </div>
+</section>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://as1.ftcdn.net/v2/jpg/12/27/69/56/1000_F_1227695658_XY8D2uHtGf7KqDo9FvNJ5C1Es2eeWXOc.jpg');
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-wrapper {
+  background-image: url('');
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 3px solid white;
+
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border-radius: 10px 10px 0 0;
+}
+
+.tabs button.active {
+  background-color: #e50914;
+  color: white;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+.active-form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color:red;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h2 span {
+  color: orangered;
+}
+
+input {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e50914;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #c40812;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
